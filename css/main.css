@@ -1,0 +1,128 @@
+p{
+  font-size: 1.2em;
+}
+a{
+  color: black;
+}
+a:hover{
+  text-decoration: none;
+}
+h1{
+  font-size: 4em !important;
+  line-height: 1.2em !important;
+  font-weight: bold !important;
+}
+h2{
+  font-size: 3.3em !important;
+  line-height: 1em !important;
+  font-weight: bold !important;
+}
+h3{
+  font-size:1.6em !important;
+  font-weight: bold !important;
+}
+body{
+  margin-top: 70px;
+}
+footer{
+  min-height: 300px;
+  border-top: 1px solid gainsboro;
+  margin-top: 20px;
+}
+.orange-text{
+  color: #F26D21;
+}
+/* telegram section */
+.telegram-section{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url("images/bg-telegram.jpg");
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+}
+/* career section */
+.career-section{
+  background-image: url("images/pattern-line.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+}
+/* team section */
+.team-image{
+  width: 70%;
+  padding: 0px;
+  padding-bottom: 10px;
+}
+.team-name{
+  padding: 0px;
+  margin-top: 15px;
+  font-size: 1.4em;
+}
+/* utility stuff */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* buttons */
+.outline-button{
+  display: inline-block;
+  border: 2px solid white;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px !important;
+  padding: 10px;
+  color: white !important;
+  font-weight: bold;
+}
+.outline-button:hover{
+  background-color: #f4b34d !important;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+  cursor: pointer;
+}
+.orange-button{
+  border: 2px solid #F26D21 !important;
+  color: #F26D21 !important;
+}
+.orange-button:hover{
+  color: white !important;
+}
+/* navbar */
+.navbar{
+  box-shadow: none !important;
+  background-image: none !important;
+  background-color: #2B4560 !important;
+  margin-bottom: 0px !important;
+  border-bottom: 1px solid white;
+}
+.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus{
+  background-color: #2B4560 !important;
+  background-image: none !important;
+  color: darkgrey !important;
+  font-size: 1em !important;
+  min-width: 90px !important;
+}
+.navbar .navbar-nav > li > a{
+  color: white !important;
+  font-size: 1em !important;
+  min-width: 90px !important;
+}
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus{
+  color: gainsboro !important;
+}
+.navbar li{
+  text-align: center;
+  margin-top: 10px;
+}
