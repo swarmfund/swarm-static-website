@@ -26,8 +26,7 @@ body{
 }
 footer{
   min-height: 300px;
-  border-top: 1px solid gainsboro;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .orange-text{
   color: #F26D21;
@@ -36,7 +35,7 @@ footer{
 .telegram-section{
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url("images/bg-telegram.jpg");
+  background-image: url("../images/bg-telegram.jpg");
   color: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -44,7 +43,7 @@ footer{
 }
 /* career section */
 .career-section{
-  background-image: url("images/pattern-line.jpg");
+  background-image: url("../images/pattern-line.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: left;
