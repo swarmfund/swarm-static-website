@@ -7,19 +7,20 @@ a{
 a:hover{
   text-decoration: none;
 }
+h1, h2, h3, h4{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300 !important;
+}
 h1{
   font-size: 4em !important;
   line-height: 1.2em !important;
-  font-weight: bold !important;
 }
 h2{
   font-size: 3.3em !important;
   line-height: 1em !important;
-  font-weight: bold !important;
 }
 h3{
-  font-size:1.6em !important;
-  font-weight: bold !important;
+  font-size: 2.4em !important;
 }
 body{
   margin-top: 70px;
@@ -27,6 +28,7 @@ body{
 footer{
   min-height: 300px;
   margin-top: 40px;
+  border-top: 1px solid gainsboro;
 }
 .orange-text{
   color: #F26D21;
@@ -58,6 +60,24 @@ footer{
   padding: 0px;
   margin-top: 15px;
   font-size: 1.4em;
+  color: #ffaf03;
+}
+.team p{
+  max-width: 200px;
+  margin: auto;
+}
+/* features */
+.features p{
+  max-width: 200px;
+  margin: auto;
+  margin-top: 20px;
+}
+.features h3{
+  color: #ffaf03;
+  font-weight: bold !important;
+}
+.features h2{
+  color: #ffaf03;
 }
 /* utility stuff */
 .videoWrapper {
@@ -92,8 +112,8 @@ footer{
   cursor: pointer;
 }
 .orange-button{
-  border: 2px solid #F26D21 !important;
-  color: #F26D21 !important;
+  border: 2px solid #ffaf03 !important;
+  color: #ffaf03 !important;
 }
 .orange-button:hover{
   color: white !important;
@@ -102,26 +122,33 @@ footer{
 .navbar{
   box-shadow: none !important;
   background-image: none !important;
-  background-color: #2B4560 !important;
+  background-color: white !important;
   margin-bottom: 0px !important;
-  border-bottom: 1px solid white;
+  color: black;
+  border-bottom: 1px solid gainsboro;
+  font-family: 'Roboto', sans-serif !important;
 }
 .navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus{
   background-color: #2B4560 !important;
   background-image: none !important;
-  color: darkgrey !important;
+  color: black !important;
   font-size: 1em !important;
   min-width: 90px !important;
 }
 .navbar .navbar-nav > li > a{
-  color: white !important;
+  color: black;
   font-size: 1em !important;
   min-width: 90px !important;
 }
 .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus{
-  color: gainsboro !important;
+  color: gainsboro;
 }
 .navbar li{
   text-align: center;
   margin-top: 10px;
+}
+@media screen and (max-width: 480px){
+  .desktop{
+    display: none !important;
+  }
 }
