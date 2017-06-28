@@ -30,8 +30,8 @@ footer{
   margin-top: 40px;
   border-top: 1px solid gainsboro;
 }
-.orange-text{
-  color: #F26D21;
+.fa{
+  margin: 0 3px 0 3px;
 }
 /* telegram section */
 .telegram-section{
@@ -65,6 +65,38 @@ footer{
 .team p{
   max-width: 200px;
   margin: auto;
+}
+.social-icons{
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  margin-top: 92px;
+  margin-left: 98px;
+}
+.social-icons-nd{
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  margin-top: 92px;
+  margin-left: 112px;
+}
+.social-icons-ndnt{
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  margin-top: 92px;
+  margin-left: 130px;
+}
+.team-image:hover{
+  opacity: 0.3;
+}
+.team-image:hover ~ .social-icons,
+.team-image:hover ~ .social-icons-nd,
+.team-image:hover ~ .social-icons-ndnt{
+  opacity: 1;
+}
+.social-icons:hover, .social-icons-nd:hover, .social-icons-ndnt:hover{
+  opacity: 1;
 }
 /* features */
 .features p{
