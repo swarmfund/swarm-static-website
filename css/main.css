@@ -97,6 +97,11 @@ footer{
 .social-icons:hover, .social-icons-nd:hover, .social-icons-ndnt:hover{
   opacity: 1;
 }
+/* faq */
+.question{
+  padding: 10px 0 10px 0;
+  border-top: 1px solid gainsboro;
+}
 /* features */
 .features p{
   max-width: 200px;
@@ -182,4 +187,42 @@ footer{
   .desktop{
     display: none !important;
   }
+}
+/* accordion toggle */
+.accordion-toggle {
+  position: relative;
+}
+.accordion-toggle::before,
+.accordion-toggle::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -22px;
+  width: 14px;
+  height: 4px;
+  margin-top: -2px;
+  background-color: #000;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.accordion-toggle::before {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  opacity: 0;
+}
+.accordion-toggle.collapsed::before {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  opacity: 1;
+}
+.accordion-toggle.collapsed::after {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
