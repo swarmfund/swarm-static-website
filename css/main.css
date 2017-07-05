@@ -9,7 +9,7 @@ a:hover{
 }
 h1, h2, h3, h4{
   font-family: 'Raleway', sans-serif;
-  font-weight: 300 !important;
+  font-weight: 300;
 }
 h1{
   font-size: 4em !important;
@@ -27,7 +27,8 @@ body{
 }
 footer{
   min-height: 300px;
-  margin-top: 40px;
+  border-top: 1px solid gainsboro;
+  padding-top: 20px
 }
 .fa{
   margin: 0 3px 0 3px;
@@ -98,6 +99,9 @@ footer{
   opacity: 1;
 }
 /* faq */
+.faq{
+  margin-bottom: 70px;
+}
 .question{
   padding: 10px 0 10px 0;
   border-top: 1px solid gainsboro;
