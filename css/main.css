@@ -163,7 +163,7 @@ footer{
 }
 /* token exchange */
 .token-exchange img{
-  width: 100%;
+  width: 100% !important;
 }
 .token-exchange{
   margin-bottom: 70px;
