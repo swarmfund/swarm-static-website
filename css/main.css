@@ -118,6 +118,14 @@ footer{
 .faq{
   margin-bottom: 70px;
 }
+.faq h4{
+  padding-right: 40px !important;
+  font-size: 1.3em !important;
+}
+.faq p{
+  font-weight: 300;
+  font-size: 1.2em;
+}
 .question{
   padding: 10px 0 10px 0;
   border-top: 1px solid gainsboro;
@@ -236,7 +244,7 @@ footer{
   display: block;
   position: absolute;
   top: 50%;
-  right: -22px;
+  right: 20px;
   width: 14px;
   height: 4px;
   margin-top: -2px;
