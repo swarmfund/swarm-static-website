@@ -36,7 +36,7 @@ footer{
   border-top: 1px solid gainsboro;
   padding-top: 60px
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 767px){
   footer .col-xs-12:nth-of-type(2){
     padding-top: 30px;
   }
@@ -77,7 +77,7 @@ footer{
   max-width: 200px;
   margin: auto;
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 767px){
   .team p{
     margin-bottom: 30px;
   }
@@ -134,6 +134,11 @@ footer{
 }
 .features h2{
   color: #ffaf03;
+}
+@media screen and (max-width: 767px){
+  .features img{
+    margin-top: 30px;
+  }
 }
 /* utility stuff */
 .videoWrapper {
@@ -216,7 +221,7 @@ footer{
   text-align: center;
   margin-top: 10px;
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 767px){
   .desktop{
     display: none !important;
   }
