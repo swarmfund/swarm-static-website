@@ -211,8 +211,7 @@ footer{
   font-family: 'Roboto', sans-serif !important;
 }
 .navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus{
-  background-color: #2B4560 !important;
-  background-image: none !important;
+  
   color: black !important;
   font-size: 1em !important;
   min-width: 90px !important;
