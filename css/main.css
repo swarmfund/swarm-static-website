@@ -66,6 +66,7 @@ footer{
   width: 70%;
   padding: 0px;
   padding-bottom: 10px;
+  max-width: 160px;
 }
 .team-name{
   padding: 0px;
@@ -86,22 +87,22 @@ footer{
   position: absolute;
   opacity: 0;
   top: 0;
-  margin-top: 30%;
-  margin-left: 30%;
+  margin-left: 26%;
+  margin-top: 26%;
 }
 .social-icons-nd{
   position: absolute;
   opacity: 0;
   top: 0;
-  margin-top: 30%;
-  margin-left: 37%;
+  margin-left: 32%;
+  margin-top: 26%;
 }
 .social-icons-ndnt{
   position: absolute;
   opacity: 0;
   top: 0;
-  margin-top: 30%;
-  margin-left: 42%;
+  margin-left: 39%;
+  margin-top: 26%;
 }
 .team-image:hover{
   opacity: 0.3;
