@@ -166,7 +166,7 @@ footer{
 .outline-button{
   display: inline-block;
   border: 2px solid white;
-  width: 100%;
+  width: 200px;
   text-align: center;
   border-radius: 25px !important;
   padding: 10px;
@@ -174,7 +174,7 @@ footer{
   font-weight: bold;
 }
 .outline-button:hover{
-  background-color: #f4b34d !important;
+  background-color: #f26415 !important;
   -webkit-transition: background-color 300ms linear;
   -ms-transition: background-color 300ms linear;
   transition: background-color 300ms linear;
@@ -211,7 +211,7 @@ footer{
   font-family: 'Roboto', sans-serif !important;
 }
 .navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus{
-  
+
   color: black !important;
   font-size: 1em !important;
   min-width: 90px !important;
