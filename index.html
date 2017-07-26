@@ -9,6 +9,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/main.css" rel="text/css">
   <link rel="stylesheet" href="css/font-awesome.css" rel="text/css">
+  <script src="js/main.js"></script>
   <!-- Facebook Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -95,8 +96,8 @@
 
   <div class="container-fluid">
     <div class="row row-padding-lg" style="padding-bottom: 140px; padding-top: 140px; background-image: url(images/pattern-orange.jpg); background-attachment: fixed; color: white">
-      <div class="col-xs-12">
-        <h1 class="text-center">Easily co-invest<br>alongside the experts</h1>
+      <div id="mainHeader" style="display: none; min-height: 348px" class="col-xs-12">
+        <h1 class="text-center" >Easily co-invest<br>alongside the experts</h1>
         <h3 class="text-center" style="line-height: 30px">Swarm converts intelligent financial opportunities<br>from exclusive to inclusive</h3>
         <div style="margin: auto; width: 100%; text-align: center; margin-top: 50px;">
           <ul style="padding-left: 0">
@@ -114,12 +115,14 @@
 
     <div class="row" style="padding-top: 80px; padding-bottom: 80px">
       <div class="col-xs-12 col-md-6 col-md-offset-1" style="margin-top: 20px">
-        <h2 style="color: #F26D21; max-width: 520px">Start approaching deals in a whole new way.</h2>
-        <br>
-        <div style="font-size: 1.4em; max-width: 400px; margin-bottom: 40px">Watch our video to learn more about how we are reinventing investing</div>
+        <div style="display: none" id="videoInfo">
+          <h2 style="color: #F26D21; max-width: 520px">Start approaching deals in a whole new way.</h2>
+          <br>
+          <div style="font-size: 1.4em; max-width: 400px; margin-bottom: 40px">Watch our video to learn more about how we are reinventing investing</div>
+        </div>
       </div>
       <div class="col-xs-12 col-md-4">
-        <div class="videoWrapper">
+        <div class="videoWrapper" style="display: none">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/sW17ETznjl8?modestbranding=0&autohide=1&showinfo=0&controls=1" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
@@ -143,17 +146,17 @@
         </div>
       </div>
       <div class="row" style="text-align: center; padding-bottom: 40px">
-        <div class="col-sm-4">
+        <div style="display: none" id="firstFeature" class="col-sm-4">
           <img src="images/icon-house.png" style="width: 50%")>
           <h3 class="text-center">Distressed<br>Real Estate</h3>
           <p class="text-center">Hassle free investment opportunities you can deploy in minutes</p>
         </div>
-        <div class="col-sm-4">
+        <div style="display: none" id="secondFeature" class="col-sm-4">
           <img src="images/icon-office.png" style="width: 50%")>
           <h3 class="text-center">SaaS and Tech<br>Corporations</h3>
           <p class="text-center">Invest as little or as much capital you want without tying up your resources</p>
         </div>
-        <div class="col-sm-4">
+        <div style="display: none" id="thirdFeature" class="col-sm-4">
           <img src="images/icon-world.png" style="width: 50%")>
           <h3 class="text-center">Renewables and<br>Preservation</h3>
           <p class="text-center">Make a real impact towards restoring global health</p>
