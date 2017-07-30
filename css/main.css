@@ -233,6 +233,10 @@ footer{
   .desktop{
     display: none !important;
   }
+  .navbar-right{
+    padding-bottom: 30px;
+    background-color: gainsboro !important;
+  }
 }
 /* accordion toggle */
 .accordion-toggle {
