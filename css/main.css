@@ -87,22 +87,22 @@ footer{
   position: absolute;
   opacity: 0;
   top: 0;
-  margin-left: 26%;
-  margin-top: 26%;
+  margin-left: 30%;
+  margin-top: 22.5%;
 }
 .social-icons-nd{
   position: absolute;
   opacity: 0;
   top: 0;
-  margin-left: 32%;
-  margin-top: 26%;
+  margin-left: 35%;
+  margin-top: 22.5%;
 }
 .social-icons-ndnt{
   position: absolute;
   opacity: 0;
   top: 0;
-  margin-left: 39%;
-  margin-top: 26%;
+  margin-left: 40.5%;
+  margin-top: 22.5%;
 }
 .team-image:hover{
   opacity: 0.3;
