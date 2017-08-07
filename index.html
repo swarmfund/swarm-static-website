@@ -144,6 +144,20 @@
       </div>
     </div>
 
+    <div class="row email-form-section" style="padding-bottom: 60px; padding-top: 60px">
+      <h4 class="text-center"><b>Subscribe to our newsletter to stay up to date.</b></h4>
+      <form id="subscription-form" style="text-align: center" action="http://www.sites.swarm.fund/sendy/subscribe" method="POST" accept-charset="utf-8">
+        <div id="subscription-fields">
+          <input type="text" name="name" placeholder="Your name..." id="name"/>
+          <input type="email" name="email" placeholder="Your email..." id="email"/>
+          <input type="hidden" name="list" value="s4WkU3KnknLfsuCOzq32Dw"/>
+          <input class="outline-button" type="submit" name="submit" id="submit"/>
+        </div>
+        <span id="subscribe-notification">
+        </span>
+      </form>
+    </div>
+
     <div class="row telegram-section">
       <div class="col-xs-12 col-md-offset-1 col-md-3">
         <img class="desktop" src="images/telegram-logo.svg" style="max-width: 190px">
@@ -420,4 +434,27 @@
       </div>
     </footer>
 </body>
+<script>
+$('#subscription-form').on('submit', function(e) {
+  e.preventDefault();
+
+  $.ajax({
+    url: $(this).attr('action'),
+    method: $(this).attr('method'),
+    data: $(this).serialize(),
+    dataType: ''
+  }).done(function(data) {
+    console.log("Success");
+
+  }).fail(function() {
+    console.log("Whoops")
+    // errors
+  }).always(function() {
+    $('#subscription-fields').hide();
+    $('#subscribe-notification')[0].innerText = "Thank for you for subscribing!";
+
+    // always
+  })
+})
+</script>
 </html>
