@@ -61,7 +61,7 @@ footer{
   background-attachment: fixed;
   background-position: left;
 }
-/* subscription form */
+/* newsletter subscription and token subscription forms */
 #subscribe-notification{
   color: green;
   font-size: 1.2em;
@@ -71,14 +71,15 @@ footer{
   padding: 10px;
   border-top: 1px solid gainsboro;
 }
-.email-form-section input{
+.email-form-section input, #token-form input{
   border-radius: 4px;
   padding: 6px 22px 6px 12px;
   min-width: 250px;
   margin-top: 5px;
   margin-bottom: 5px;
+  color: grey;
 }
-.email-form-section input:focus{
+.email-form-section input:focus, #token-form input:focus{
   outline: none;
 }
 .email-form-section #submit{
@@ -91,6 +92,9 @@ footer{
 .email-form-section #submit:hover{
   background-color: #f26415 !important;
   color: white !important;
+}
+#submit-token{
+  background-color: transparent;
 }
 /* team section */
 .team-image{
