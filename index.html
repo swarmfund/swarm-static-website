@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css" rel="text/css">
   <link rel="stylesheet" href="css/font-awesome.css" rel="text/css">
   <script src="js/main.js"></script>
@@ -90,13 +92,16 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="https://swarm.fund">
           <img src="images/swarm-orange-logo.gif" style="width: 100px")>
         </a>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="https://tokenswap.swarm.fund">TOKEN SWAP</a>
+          </li>
           <li>
             <a href="faq.html">FAQs</a>
           </li>
@@ -105,9 +110,6 @@
           </li>
           <li>
             <a href="https://t.me/joinchat/AAAAAEMPAz9QWYGPz4dDkA">JOIN TELEGRAM</a>
-          </li>
-          <li style="margin-right: 20px; margin-left: 20px; margin-top: 8px">
-            <a class="outline-button orange-button" href="http://app.swarm.fund/member-registration">Buy Swarm</a>
           </li>
         </ul>
       </div>
@@ -156,15 +158,31 @@
 
     <div class="row" style="padding-top: 80px; padding-bottom: 80px">
       <div class="col-xs-12 col-md-6 col-md-offset-1" style="margin-top: 20px">
-        <h2 style="color: #F26D21; max-width: 520px">Start approaching deals in a whole new way.</h2>
-        <br>
-        <div style="font-size: 1.4em; max-width: 400px; margin-bottom: 40px">Watch our video to learn more about how we are reinventing investing</div>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <div class="videoWrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/tlN7ymg7KYw" frameborder="0" allowfullscreen></iframe>
+        <div style="display: none" id="videoInfo">
+          <h2 style="color: #F26D21; max-width: 520px">Start approaching deals in a whole new way.</h2>
+          <br>
+          <div style="font-size: 1.4em; max-width: 400px; margin-bottom: 40px">Watch our video to learn more about how we are reinventing investing</div>
         </div>
       </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="videoWrapper" style="display: none">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/sW17ETznjl8?modestbranding=0&autohide=1&showinfo=0&controls=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="row email-form-section" style="padding-bottom: 60px; padding-top: 60px">
+      <h4 class="text-center"><b>Subscribe to our newsletter to stay up to date.</b></h4>
+      <form id="subscription-form" style="text-align: center" action="http://www.sites.swarm.fund/sendy/subscribe" method="POST" accept-charset="utf-8">
+        <div id="subscription-fields">
+          <input type="text" name="name" placeholder="Your name..." id="name"/>
+          <input type="email" name="email" placeholder="Your email..." id="email"/>
+          <input type="hidden" name="list" value="s4WkU3KnknLfsuCOzq32Dw"/>
+          <input class="outline-button" type="submit" name="submit" id="submit"/>
+        </div>
+        <span id="subscribe-notification">
+        </span>
+      </form>
     </div>
 
     <div class="row telegram-section">
@@ -185,17 +203,17 @@
         </div>
       </div>
       <div class="row" style="text-align: center; padding-bottom: 40px">
-        <div class="col-md-4">
+        <div style="display: none" id="firstFeature" class="col-sm-4">
           <img src="images/icon-house.png" style="width: 50%")>
           <h3 class="text-center">Distressed<br>Real Estate</h3>
           <p class="text-center">Hassle free investment opportunities you can deploy in minutes</p>
         </div>
-        <div class="col-md-4">
+        <div style="display: none" id="secondFeature" class="col-sm-4">
           <img src="images/icon-office.png" style="width: 50%")>
           <h3 class="text-center">SaaS and Tech<br>Corporations</h3>
           <p class="text-center">Invest as little or as much capital you want without tying up your resources</p>
         </div>
-        <div class="col-md-4">
+        <div style="display: none" id="thirdFeature" class="col-sm-4">
           <img src="images/icon-world.png" style="width: 50%")>
           <h3 class="text-center">Renewables and<br>Preservation</h3>
           <p class="text-center">Make a real impact towards restoring global health</p>
@@ -216,11 +234,13 @@
 
     <div class="row" style="padding-top: 30px; padding-bottom: 0px; background-color: #2B4560; color: white !important">
       <div class="col-md-5 col-md-push-7 text-center">
-        <h2 style="padding-top: 45px">Meet The Swarm Token</h2>
-        <p>All gross revenue from the Swarm platform goes to Swarm<br>
-          token holders through our groundbreaking reward<br>
-          mechanism. <b>It's rewardable</b></p>
-          <a href="https://docs.google.com/document/d/1aTI7i-GkvxBWT3YUU4vGpUcAF2D21yzz4lF52GxFqrI/edit" style="width: 250px; margin-top: 20px; margin-bottom: 40px" class="outline-button">EXPLORE OUR WHITEPAPER</a>
+        <div style="padding-top: 45px; padding-right: 20px">
+          <h3>Meet The Swarm Token</h3>
+          <p>All gross revenue from the Swarm platform goes to Swarm
+          token holders through our groundbreaking liquid democracy
+          mechanism.</p>
+        </div>
+          <a href="http://lightpaper.swarm.fund" target="_blank" style="width: 250px; margin-top: 20px; margin-bottom: 40px" class="outline-button">EXPLORE OUR LIGHTPAPER</a>
         </div>
         <div class="col-md-7 col-md-pull-5">
           <img src="images/token.png" style="width: 100%">
@@ -230,7 +250,7 @@
       <section class="team" style="padding-top: 50px; padding-bottom: 50px; color: black !important; text-align: center !important">
         <div class="row">
           <h2 class="text-center" style="padding-bottom: 30px; color: #ffaf03">The Swarm Token Team</h2>
-          <div class="col-md-3">
+          <div class="col-xs-12 col-sm-3">
             <img class="team-image" src="images/swarm_team/joel_dietz.png">
             <div class="team-name orange-text">Joel Dietz</div>
             <p>Crypto Veteran</p>
@@ -240,7 +260,7 @@
               <a target="_blank" href="https://twitter.com/fractastical"><i class="fa fa-twitter" style="font-size: 2em" aria-hidden="true"></i></a>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xs-12 col-sm-3">
             <img class="team-image" src="images/swarm_team/philipp_pieper.png">
             <div class="team-name orange-text">Philipp Pieper</div>
             <p>Portfolio Manager</p>
@@ -249,16 +269,16 @@
               <a target="_blank" href="https://twitter.com/PhilippPieper"><i class="fa fa-twitter" style="font-size: 2em" aria-hidden="true"></i></a>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xs-12 col-sm-3">
             <img class="team-image" src="images/swarm_team/timo_lehes.png">
             <div class="team-name orange-text">Timo Lehes</div>
-            <p>Investment Banker</p>
+            <p>Investor</p>
             <div class="social-icons-nd">
               <a target="_blank" href="https://www.linkedin.com/in/timolehes/"><i class="fa fa-linkedin-square" style="font-size: 2em" aria-hidden="true"></i></a>
               <a target="_blank" href="https://twitter.com/timolehes"><i class="fa fa-twitter" style="font-size: 2em" aria-hidden="true"></i></a>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xs-12 col-sm-3">
             <img class="team-image" src="images/swarm_team/jelle.png">
             <div class="team-name orange-text">Jelle Herold</div>
             <p>Godfather of Smart Contracts</p>
@@ -271,7 +291,7 @@
         </div>
         <br><br>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-xs-12 col-sm-3">
             <img class="team-image" src="images/swarm_team/bogdan_fiedur.png">
             <div class="team-name orange-text">Bogdan Fiedur</div>
             <p>Crypto Hacker</p>
@@ -281,7 +301,7 @@
               <a target="_blank" href="https://twitter.com/bogdanfiedur"><i class="fa fa-twitter" style="font-size: 2em" aria-hidden="true"></i></a>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xs-12 col-sm-3">
             <img class="team-image" src="images/swarm_team/anton_livaja.gif" style="border-radius: 50%;">
             <div class="team-name orange-text">Anton Livaja</div>
             <p>Full Stack Developer</p>
@@ -291,7 +311,7 @@
               <a target="_blank" href="https://twitter.com/anton_livaja"><i class="fa fa-twitter" style="font-size: 2em" aria-hidden="true"></i></a>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xs-12 col-sm-3">
             <img class="team-image" src="images/swarm_team/sebastian.png">
             <div class="team-name orange-text">Sebastian Romero</div>
             <p>Crypto UI/UX Expert</p>
@@ -300,18 +320,29 @@
               <a target="_blank" href="https://twitter.com/tianfut"><i class="fa fa-twitter" style="font-size: 2em" aria-hidden="true"></i></a>
             </div>
           </div>
-          <div class="col-md-3">
-            <img class="team-image" src="images/swarm_team/matthew.png">
-            <div class="team-name orange-text">Matthew Lacrosse</div>
-            <p>Marketing & Growth Guru</p>
+          <div class="col-xs-12 col-sm-3">
+            <img class="team-image" style="border-radius: 50%" src="images/swarm_team/jazzwall.gif">
+            <div class="team-name orange-text">“Jazzwall” Sharad Jaiswal</div>
+            <p>Full Stack Dev & PM</p>
             <div class="social-icons-ndnt">
-              <a target="_blank" href="https://www.linkedin.com/in/mattlacrosse/"><i class="fa fa-linkedin-square" style="font-size: 2em" aria-hidden="true"></i></a>
+              <a><i class="fa fa-linkedin-square" style="font-size: 2em" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-xs-12 col-sm-3">
+            <img style="border-radius: 50%; filter: grayscale(100%)" class="team-image" src="images/swarm_team/caterina_rindi.jpg">
+            <div class="team-name orange-text">Caterina Rindi</div>
+            <p>Community Engagement Manager</p>
+            <div class="social-icons-ndnt">
+              <a target="_blank" href="https://www.linkedin.com/in/crindi/"><i class="fa fa-linkedin-square" style="font-size: 2em" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
         <div class="row" style="padding-top: 50px; padding-bottom: 50px">
           <h3 class="text-center" style="padding-bottom: 30px; color: #ffaf03">Advisors</h3>
-          <div class="col-md-3">
+          <div class="col-xs-12 col-sm-3">
             <img class="team-image" src="images/swarm_team/team_houmann.png">
             <div class="team-name orange-text">Houman Shadab</div>
             <p>Professor at New York Law School, Cofounder Clause.io</p>
@@ -320,15 +351,7 @@
               <a target="_blank" href="https://twitter.com/houmanshadab"><i class="fa fa-twitter" style="font-size: 2em" aria-hidden="true"></i></a>
             </div>
           </div>
-          <div class="col-md-3">
-            <img class="team-image" src="images/swarm_team/team_kathleen.png">
-            <div class="team-name orange-text">Kathleen Moriarty</div>
-            <p>Partner, Arnold & Porter Kaye Scholer LLP</p>
-            <div class="social-icons-ndnt">
-              <a target="_blank" href="https://www.linkedin.com/in/kathleen-h-moriarty-aka-spdrwoman-15b236b/"><i class="fa fa-linkedin-square" style="font-size: 2em" aria-hidden="true"></i></a>
-            </div>
-          </div>
-          <div class="col-md-3">
+          <div class="col-xs-12 col-sm-3">
             <img class="team-image" src="images/swarm_team/mark.png">
             <div class="team-name orange-text">Mark Oei</div>
             <p>Investor, former Sequoia Heritage</p>
@@ -336,24 +359,82 @@
               <a target="_blank" href="https://www.linkedin.com/in/mark-oei-079348/"><i class="fa fa-linkedin-square" style="font-size: 2em" aria-hidden="true"></i></a>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xs-12 col-sm-3">
             <img class="team-image" src="images/swarm_team/team_mike.png">
             <div class="team-name orange-text">Mike Doty</div>
             <p>MD, Ark.io</p>
-            <div class="social-icons">
+            <!--<div class="social-icons">
               <a href=""><i class="fa fa-github" style="font-size: 2em" aria-hidden="true"></i></a>
               <a href=""><i class="fa fa-linkedin-square" style="font-size: 2em" aria-hidden="true"></i></a>
               <a href=""><i class="fa fa-twitter" style="font-size: 2em" aria-hidden="true"></i></a>
+            </div>-->
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <div>
+              <img class="team-image" style="border-radius: 50%; filter: grayscale(100%)" src="images/swarm_team/jack_peterson.jpg">
+              <div class="social-icons-ndnt">
+                <a target="_blank" href="https://www.linkedin.com/in/jack-peterson-420b0258/"><i class="fa fa-linkedin-square" style="font-size: 2em" aria-hidden="true"></i></a>
+              </div>
             </div>
+            <div class="team-name orange-text">Jack Peterson</div>
+            <p>Co-Founder at Augur</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-3">
+            <img class="team-image" style="border-radius: 50%; filter: grayscale(100%)" src="images/swarm_team/gustav.jpeg">
+            <div class="team-name orange-text">Gustav Simonsson</div>
+            <p>Core Ethereum Dev & DAO Curator</p>
+            <!--<div class="social-icons">
+              <a href=""><i class="fa fa-github" style="font-size: 2em" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-linkedin-square" style="font-size: 2em" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-twitter" style="font-size: 2em" aria-hidden="true"></i></a>
+            </div>-->
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <img class="team-image" style="border-radius: 50%; filter: grayscale(100%)" src="images/swarm_team/john_edge.jpg">
+            <div class="team-name orange-text">John Edge</div>
+            <p>Connection Science Fellow at MIT</p>
+            <div class="social-icons-ndnt">
+              <a target="_blank" href="https://www.linkedin.com/in/johnedge/"><i class="fa fa-linkedin-square" style="font-size: 2em" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <img class="team-image" style="border-radius: 50%; filter: grayscale(100%)" src="images/swarm_team/michael_casey.jpg">
+            <div class="team-name orange-text">Michael Casey</div>
+            <p>Senior Advisor, Blockchain Research at MIT Media Lab</p>
+            <div class="social-icons-ndnt">
+              <a target="_blank" href="https://www.linkedin.com/in/michaeljohncasey"><i class="fa fa-linkedin-square" style="font-size: 2em" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <img class="team-image" style="border-radius: 50%; filter: grayscale(100%)" src="images/swarm_team/irfan_ganchi.jpg">
+            <div class="team-name orange-text">Irfan Ganchi</div>
+            <p>Head of Native Ad Products @ Amazon</p>
+            <div class="social-icons-ndnt">
+              <a target="_blank" href="https://www.linkedin.com/in/irfanmohammed/"><i class="fa fa-linkedin-square" style="font-size: 2em" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-3">
+            <img class="team-image" style="border-radius: 50%; filter: grayscale(100%)" src="images/swarm_team/martinvancreveld.jpg">
+            <div class="team-name orange-text">Martin van Creveld</div>
+            <p>Renowned Author & Military History and Strategy Expert</p>
+            <!--<div class="social-icons">
+              <a href=""><i class="fa fa-github" style="font-size: 2em" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-linkedin-square" style="font-size: 2em" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-twitter" style="font-size: 2em" aria-hidden="true"></i></a>
+            </div>-->
           </div>
         </div>
       </div>
 
       <div class="row career-section" style="margin: 0;padding-top: 50px; padding-bottom: 50px; border-top: 1px solid grey; border-bottom: 1px solid grey">
-        <div class="col-xs-12 col-md-6 text-center">
+        <div class="col-xs-12 col-sm-6 text-center">
           <h2 style="color: #ffaf03; padding-left: 20px; padding-right: 20px">We're always looking for new talent.</h2>
         </div>
-        <div class="col-xs-12 col-md-6 text-center">
+        <div class="col-xs-12 col-sm-6 text-center">
           <p>
             Want to join us to help shape the future of Swarm?<br>
             Great! Please join our Telegram chat room and send us <br>
@@ -364,18 +445,18 @@
       </div>
 
     <footer>
-      <div class="col-xs-12 col-md-3 col-md-offset-1">
+      <div class="col-xs-12 col-sm-3 col-sm-offset-1">
         <a href="/public/index">
           <img src="images/swarm-logo-black.gif" style="max-width: 150px">
         </a>
       </div>
-      <div class="col-xs-12 col-md-2 text-left">
+      <div class="col-xs-12 col-sm-2 text-left">
         <a href="https://medium.com/@Swarm">Blog</a><br><br>
         <a href="https://t.me/joinchat/AAAAAEMPAz9QWYGPz4dDkA">Join Telegram</a><br><br>
         <a href="terms_of_use.html">Terms of Use</a><br><br>
         <a href="privacy_policy.html">Privacy Policy</a><br><br>
       </div>
-      <div class="col-xs-12 col-md-2 text-left">
+      <div class="col-xs-12 col-sm-2 text-left">
 
       </div>
     </footer>

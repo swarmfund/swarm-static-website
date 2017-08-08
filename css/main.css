@@ -1,5 +1,8 @@
+body{
+  white-space: normal;
+}
 p{
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 a{
   color: black;
@@ -9,7 +12,7 @@ a:hover{
 }
 h1, h2, h3, h4{
   font-family: 'Raleway', sans-serif;
-  font-weight: 300 !important;
+  font-weight: 300;
 }
 h1{
   font-size: 4em !important;
@@ -22,12 +25,21 @@ h2{
 h3{
   font-size: 2.4em !important;
 }
+h4{
+  font-size: 1.6em !important;
+}
 body{
   margin-top: 70px;
 }
 footer{
   min-height: 300px;
-  margin-top: 40px;
+  border-top: 1px solid gainsboro;
+  padding-top: 60px
+}
+@media screen and (max-width: 767px){
+  footer .col-xs-12:nth-of-type(2){
+    padding-top: 30px;
+  }
 }
 .fa{
   margin: 0 3px 0 3px;
@@ -89,6 +101,7 @@ footer{
   width: 70%;
   padding: 0px;
   padding-bottom: 10px;
+  max-width: 160px;
 }
 .team-name{
   padding: 0px;
@@ -100,26 +113,31 @@ footer{
   max-width: 200px;
   margin: auto;
 }
+@media screen and (max-width: 767px){
+  .team p{
+    margin-bottom: 30px;
+  }
+}
 .social-icons{
   position: absolute;
   opacity: 0;
   top: 0;
-  margin-top: 92px;
-  margin-left: 98px;
+  margin-left: 30%;
+  margin-top: 22.5%;
 }
 .social-icons-nd{
   position: absolute;
   opacity: 0;
   top: 0;
-  margin-top: 92px;
-  margin-left: 112px;
+  margin-left: 35%;
+  margin-top: 22.5%;
 }
 .social-icons-ndnt{
   position: absolute;
   opacity: 0;
   top: 0;
-  margin-top: 92px;
-  margin-left: 130px;
+  margin-left: 40.5%;
+  margin-top: 22.5%;
 }
 .team-image:hover{
   opacity: 0.3;
@@ -131,6 +149,22 @@ footer{
 }
 .social-icons:hover, .social-icons-nd:hover, .social-icons-ndnt:hover{
   opacity: 1;
+}
+/* faq */
+.faq{
+  margin-bottom: 70px;
+}
+.faq h4{
+  padding-right: 40px !important;
+  font-size: 1.3em !important;
+}
+.faq p{
+  font-weight: 300;
+  font-size: 1.2em;
+}
+.question{
+  padding: 10px 0 10px 0;
+  border-top: 1px solid gainsboro;
 }
 /* features */
 .features p{
@@ -144,6 +178,11 @@ footer{
 }
 .features h2{
   color: #ffaf03;
+}
+@media screen and (max-width: 767px){
+  .features img{
+    margin-top: 30px;
+  }
 }
 /* utility stuff */
 .videoWrapper {
@@ -163,7 +202,7 @@ footer{
 .outline-button{
   display: inline-block;
   border: 2px solid white;
-  width: 100%;
+  width: 200px;
   text-align: center;
   border-radius: 25px !important;
   padding: 10px;
@@ -171,7 +210,7 @@ footer{
   font-weight: bold;
 }
 .outline-button:hover{
-  background-color: #f4b34d !important;
+  background-color: #f26415 !important;
   -webkit-transition: background-color 300ms linear;
   -ms-transition: background-color 300ms linear;
   transition: background-color 300ms linear;
@@ -184,7 +223,20 @@ footer{
 .orange-button:hover{
   color: white !important;
 }
+/* token exchange */
+.token-exchange img{
+  width: 100% !important;
+}
+.token-exchange{
+  margin-bottom: 70px;
+}
+.token-exchange h4{
+  padding: 20px 0 20px 0;
+}
 /* navbar */
+.navbar-toggle{
+  margin-top: 18px !important;
+}
 .navbar{
   box-shadow: none !important;
   background-image: none !important;
@@ -195,8 +247,7 @@ footer{
   font-family: 'Roboto', sans-serif !important;
 }
 .navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus{
-  background-color: #2B4560 !important;
-  background-image: none !important;
+
   color: black !important;
   font-size: 1em !important;
   min-width: 90px !important;
@@ -213,8 +264,50 @@ footer{
   text-align: center;
   margin-top: 10px;
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 767px){
   .desktop{
     display: none !important;
   }
+  .navbar-right{
+    padding-bottom: 30px;
+    background-color: gainsboro !important;
+  }
+}
+/* accordion toggle */
+.accordion-toggle {
+  position: relative;
+}
+.accordion-toggle::before,
+.accordion-toggle::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 14px;
+  height: 4px;
+  margin-top: -2px;
+  background-color: #000;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.accordion-toggle::before {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  opacity: 0;
+}
+.accordion-toggle.collapsed::before {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  opacity: 1;
+}
+.accordion-toggle.collapsed::after {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
