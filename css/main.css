@@ -44,6 +44,15 @@ footer{
 .fa{
   margin: 0 3px 0 3px;
 }
+.social-icon{
+  width: 30px;
+  margin: 0 8px 0 0;
+}
+@media screen and (max-width: 767px){
+  .nav-social-icon{
+    display: none !important;
+  }
+}
 /* telegram section */
 .telegram-section{
   padding-top: 60px;
